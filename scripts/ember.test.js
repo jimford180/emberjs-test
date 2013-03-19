@@ -10,12 +10,9 @@ App.ApplicationView = Ember.View.extend({
 App.ApplicationController = Ember.Controller.extend();
 
 //Wire up the router
-App.Router = Ember.Router.extend({
-  root: Ember.Route.extend({
-    index: Ember.Route.extend({
-      route: '/'
-    })
-  })
+App.Router = Ember.Router.extend();
+App.Router.map(function () {
+    this.route("about");
 });
 
 //Finally, initialize
