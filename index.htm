@@ -31,16 +31,12 @@
             <div class="large-12 columns">
                 <table>
                     <tbody>
+                        {{#each controller}}
                         <tr>
                             <td>C</td>
-                            <td>Take the cat to the vet tomorrow</td>
-                            <td></td>
+                            <td>{{name}}</td>
                         </tr>
-                        <tr>
-                            <td>C</td>
-                            <td>Pick up the dry cleaning</td>
-                            <td></td>
-                        </tr>
+                        {{/each}}
                     </tbody>
                 </table>
             </div>

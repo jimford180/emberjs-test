@@ -15,5 +15,11 @@ App.Router.map(function () {
     this.route("about");
 });
 
+App.IndexRoute = Ember.Route.extend({
+    model: function () {
+        return [{ id: 1, name: 'Take the cat to the vet.', completed: false }, { id: 2, name: 'Bring home umbrella.', completed: false }];
+    }
+});
+
 //Finally, initialize
 App.initialize();
